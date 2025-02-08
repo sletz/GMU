@@ -757,7 +757,7 @@ void bargraf_paint(t_bargraf* x, t_object* view)
             //				t_float padx = 0;
             //				t_float pady = 0;
             //				jgraphics_matrix_init(t, cos(rad), sin(rad), -sin(rad), cos(rad), padx,
-            //pady); 				jgraphics_transform(g, t);
+            // pady); 				jgraphics_transform(g, t);
             //			}
             // draw dB value (choose dbval, linval, maxdbval ????)
             jf  = jfont_create(jbox_get_fontname((t_object*)x)->s_name,

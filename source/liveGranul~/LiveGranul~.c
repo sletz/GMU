@@ -162,8 +162,8 @@ typedef struct _liveGranul {
         envinc;  // pas d'avancement dans le buffer enveloppe (par rapport � la longueur du grain
     double* envind;  // indice de d�part dans le buffer enveloppe (debut si lecture normale, fin si
                      // lecture inversee)
-    double* x_env;  // enveloppe de chaque voix
-    int*    Venv;   // numero du buffer enveloppe dans lequel sera pris le grain
+    double* x_env;   // enveloppe de chaque voix
+    int*    Venv;    // numero du buffer enveloppe dans lequel sera pris le grain
 
     int* x_delay;    // delay du declenchement de grain par rapport au vecteur (voir perform)
     int* x_voiceOn;  // voix active
@@ -875,7 +875,7 @@ void* liveGranul_new(t_symbol* s, short ac, t_atom* av)
 
                 case A_SYM:
                     //	post("argument %ld is a symbol : name %s, assigned to env buffer~
-                    //name",(long)j,av[j].a_w.w_sym->s_name);
+                    // name",(long)j,av[j].a_w.w_sym->s_name);
 
                     x->x_env_sym[j] = av[j].a_w.w_sym;
                     break;
