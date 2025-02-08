@@ -267,11 +267,6 @@ void bufGranul_loop(t_bufGranul* x, t_symbol* s, short ac,
                     t_atom* av);                        // definition de loop points dans le buffer
 void bufGranul_microtiming(t_bufGranul* x, long flag);  // nombres de voix en sorties
 
-// spatialisation
-float spat(float x, float d, int n);
-float spat2(float x, float d);
-void  panner(double* out, int n, double teta, double d);
-
 void bufGranul_assist(t_bufGranul* x, void* b, long m, long a,
                       char* s);  // assistance info inlet, out1et
 
