@@ -42,12 +42,21 @@ Some patches needs the [iana~](https://forum.ircam.fr/projects/detail/max-sound-
 
 If you want to build the externals from source, you will need to install [CMake](https://cmake.org/) and [Max SDK](https://github.com/Cycling74/max-sdk).
 
-Go to the `build` folder and run:
+On macOS, a [Makefile](Makefile) allows you to build for macOS and crosscompile on Windows using MinGW compilers (installed using [MacPorts](https://www.macports.org) or [Homebrew](https://brew.sh)):
 
 ``` 
-cmake -DC74_SDK=</path/to/sdk/source> ..
-cmake --build .
-```
+make help
+Available targets:
+  all       - Build for macOS and Windows
+  macos     - Compile for macOS
+  windows   - Cross-compile for Windows using MinGW
+  clean     - Remove build directories
+  format    - Format source code using clang-format
+  help      - Show this help message
+``` 
+
+In the Makefile, adjust the `C74_SDK` variable with the Max SDK local path. Then either use `make` to compile for macOS and Windows, `make macos` to only compile fo macOS, and `make windows` to only compile fo Windows.
+
 The externals will be built in the `externals` folder.
 
 ## Contributions
@@ -62,5 +71,6 @@ And also contributions from :
 - Loïc Kessous
 - Arthus Touzet
 - Matéo Fayet
+- Stéphane letz ([GRAME](https://www.grame.fr))
 
 More info : [GMU Website](https://gmem.org/recherche/gmu-granular-synthesis-environment/)
