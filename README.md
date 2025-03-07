@@ -1,4 +1,4 @@
-# GMU - GMEM Microsound Universe	
+# GMU - GMEM Microsound Universe    
 
 ![GMU_logo](https://cdn.artishoc.coop/73fdf21c-7f78-49a8-a3b9-14025fe01361/v1/medias/eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1qTTFOalU9IiwiZXhwIjpudWxsLCJwdXIiOiJtZWRpYS9tZWRpYV9pZCJ9fQ==--945665266434b7eb57a069a86cecce719f64dbdb3f109985639e45c540057957/c3a4489ca7b2/test-interstellar3-1000x500-e1489077177439.png)
 
@@ -12,19 +12,19 @@ Please refer to the License file [LICENSE.md](LICENSE.md) for further details.
 
 ## Description
 
-- externals 			
-	- bufGranul~ 		: multi buffer granulation object
-	- synGranul~ 		: sinusoidal waveform granulation
-	- liveGranul~		: live sound source granulation object
-	- rand_dist_list~ 	: random generator
+- externals             
+    - bufGranul~         : multi buffer granulation object
+    - synGranul~         : sinusoidal waveform granulation
+    - liveGranul~        : live sound source granulation object
+    - rand_dist_list~    : random generator
 
-- abstraction 				
-	- tranche_ctrl5 		: random signal generator based on probability curves
-	- trig_ctrl5			: random pulse generator based on probability curves
+- abstraction                 
+    - tranche_ctrl5      : random signal generator based on probability curves
+    - trig_ctrl5         : random pulse generator based on probability curves
 
-- editors					
-	- Envelope_Editor	: a block chain based envelope editor (for grain envelope or ...)
-			
+- editors                    
+    - Envelope_Editor    : a block chain based envelope editor (for grain envelope or ...)
+            
 
 ## Installation  
 
@@ -42,7 +42,7 @@ Some patches needs the [iana~](https://forum.ircam.fr/projects/detail/max-sound-
 
 If you want to build the externals from source, you will need to install [CMake](https://cmake.org/) and [Max SDK](https://github.com/Cycling74/max-sdk).
 
-On macOS, a [Makefile](Makefile) allows you to build for macOS and crosscompile on Windows using MinGW compilers (installed using [MacPorts](https://www.macports.org) or [Homebrew](https://brew.sh)):
+On macOS, a [Makefile](Makefile) allows you to build for macOS and crosscompile on Windows using MinGW compilers (installed using [MacPorts](https://www.macports.org), when the x86_64-w64-mingw32-gcc package or [Homebrew](https://brew.sh)):
 
 ``` 
 make help
@@ -61,16 +61,16 @@ The externals will be built in the `externals` folder.
 
 ## Contributions
 
-GMU was developped at [GMEM - Marseille - Centre National de Création Musicale](https://gmem.org/) by :
-- Charles Bascou		
-- Leopold Frey			
+GMU was developped at [GMEM - Marseille - Centre National de Création Musicale](https://gmem.org/) by:
+- Charles Bascou        
+- Leopold Frey            
 - Laurent Pottier
 
-And also contributions from :
+And also contributions from:
 - Jean-François Oliver
 - Loïc Kessous
 - Arthus Touzet
 - Matéo Fayet
 - Stéphane letz ([GRAME](https://www.grame.fr))
 
-More info : [GMU Website](https://gmem.org/recherche/gmu-granular-synthesis-environment/)
+More info: [GMU Website](https://gmem.org/recherche/gmu-granular-synthesis-environment/)

@@ -366,9 +366,7 @@ t_symbol* atom2symbol(t_atom* av, int ind)
 int buffer_check(t_bufGranul* x, int num)
 {
     int index;
-
     index = (num < 0 || num >= NSBUF) ? 0 : num;
-
     return index;
 }
 
