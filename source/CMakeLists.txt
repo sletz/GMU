@@ -43,4 +43,4 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/idleubutton)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/rand_dist_list)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/rand_dist_list~)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/multiouts~)
-
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/multiouts2~)

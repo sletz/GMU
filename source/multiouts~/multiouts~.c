@@ -279,7 +279,7 @@ void* multiouts_new(double val)
 double spat(double x, double d, int n)
 {
     double x1;
-    
+
     x1 = fmod(x, 1.0);
     x1 = (x1 < 0.5 ? 0.5 - x1 : x1 - 0.5);  // x1 = abs(x - 0.5) ;
     x1 = (1 - (x1 * n * d));                // fct linéaire ;
