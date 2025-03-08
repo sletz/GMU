@@ -164,23 +164,19 @@ void multiouts_free(t_multiouts* x)
 
 /************************** Fonctions utilitaires **************************/
 
-// Calcul d'un gain en fonction de x, d et du nombre de sorties n
+// Fonction pour spatialiser sur n voix
 double spat(double x, double d, int n)
 {
-    double x1 = fmod(x, 1.0);
-    x1        = (x1 < 0.5 ? 0.5 - x1 : x1 - 0.5);
-    x1        = (1 - (x1 * n * d));
-    x1        = (x1 < 0 ? 0 : x1);
-    return pow(x1, 0.5) * ((d / 2) + 0.5);
+    double x1 = fabs(fmod(x, 1.0) - 0.5);   // Équivalent à abs(x - 0.5)
+    x1        = fmax(0, 1 - (x1 * n * d));  // Applique la linéarisation et contraint à 0 min
+    return pow(x1, 0.5) * ((d / 2) + 0.5);  // Compensation pour la distance
 }
 
-// Variante pour 2 sorties
+// Fonction pour spatialiser sur 2 voix
 double spat2(double x, double d)
 {
-    double x1 = fmod(x, 1.0);
-    x1        = (x1 < 0.5 ? 0.5 - x1 : x1 - 0.5);
-    x1        = (1 - (x1 * 2 * d));
-    x1        = (x1 < 0 ? 0 : x1);
+    double x1 = fabs(fmod(x, 1.0) - 0.5);
+    x1        = fmax(0, 1 - (x1 * 2 * d));  // Fonction linéaire
     return pow(x1 * ((d / 2) + 0.5), 0.5);
 }
 

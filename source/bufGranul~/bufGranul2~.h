@@ -172,9 +172,9 @@ typedef struct _bufGranul {
 
     int x_env_dir;  // direction de lecture de l'enveloppe
     double*
-        envinc;  // pas d'avancement dans le buffer enveloppe (par rapport ‡ la longueur du grain
-    double* envind;  // indice de dÈpart dans le buffer enveloppe (debut si lecture normale, fin si
-                     // lecture inversee)
+        envinc;  // pas d'avancement dans le buffer enveloppe (par rapport à la longueur du grain
+    double* envind;  // indice de départ dans le buffer enveloppe (debut si lecture normale, fin si
+                     // lecture inversée)
     double* x_env;   // enveloppe de chaque voix
     long*   Venv;    // numero du buffer enveloppe dans lequel sera pris le grain
 
