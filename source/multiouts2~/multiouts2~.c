@@ -63,7 +63,7 @@ void  multiouts_free(t_multiouts* x);
 void ext_main(void* r)
 {
     t_class* c;
-    c = class_new("multiouts~", (method)multiouts_new, (method)multiouts_free, sizeof(t_multiouts),
+    c = class_new("multiouts2~", (method)multiouts_new, (method)multiouts_free, sizeof(t_multiouts),
                   0L, A_DEFFLOAT, A_DEFFLOAT, 0);
 
     class_addmethod(c, (method)multiouts_dsp64, "dsp64", A_CANT, 0);
