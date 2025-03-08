@@ -42,7 +42,7 @@ Some patches needs the [iana~](https://forum.ircam.fr/projects/detail/max-sound-
 
 If you want to build the externals from source, you will need to install [CMake](https://cmake.org/) and [Max SDK](https://github.com/Cycling74/max-sdk).
 
-On macOS, a [Makefile](Makefile) allows you to build for macOS and crosscompile on Windows using MinGW compilers (installed using [MacPorts](https://www.macports.org), when the x86_64-w64-mingw32-gcc package or [Homebrew](https://brew.sh)):
+On macOS, a [Makefile](Makefile) allows you to build for macOS and crosscompile on Windows using MinGW compilers (installed using [MacPorts](https://www.macports.org), with the x86_64-w64-mingw32-gcc package or [Homebrew](https://brew.sh)):
 
 ``` 
 make help
